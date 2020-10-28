@@ -1,0 +1,87 @@
+.contact {
+    margin-top: 4rem;
+    color: $contact_grey_clr;
+}
+.contact-center {
+    width: 90vw;
+    margin: 0 auto;
+    padding-bottom: 2rem;
+    max-width: 1170px;
+}
+.contact-left {
+    width: 90vw;
+    min-height: 0;
+    margin: 0 auto;
+    max-width: 300px;
+    background-color: rgb(245, 198, 242);
+}
+.form {
+    max-width: 235px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;               
+    .form-group {
+        margin-top: 1rem;
+        input, 
+        textarea {
+            width: 100%;
+            border-radius: 0.5rem;
+            border: none;
+        }
+        input {
+            height: 2.2rem;
+        }
+    }
+    .btn {
+        height: 2.2rem;
+        width: 100%;
+        max-width: 235px;  
+        margin: 1.5rem 0;   
+        border-radius: 0.5rem;
+        font-size: calculateRem(16px);
+    }
+    .btn-pink {
+        border: none;
+        @include bkg_clr_1;
+        &:hover {
+            @include bkg_clr_2;
+        }
+    }
+}
+.contact-right {
+    max-width: 75vw;
+    margin: 0 auto;
+    p,
+    h4 {
+        text-align: center;
+        color: $contact_grey_clr;
+    }
+    p {
+        margin-bottom: 2rem;
+        padding: 2rem;
+        font-size: 1rem;
+    }
+    h4 {
+        font-size: 0.8rem;
+    }
+    .social-icons {
+        margin-top: 3rem;
+        a {
+            color: $contact_grey_clr;
+            font-size: calculateRem(25px);
+            &:hover {
+                color: $main_background;
+            }
+        }
+    }
+}
+
+
+/* Responsive */
+@media screen and (min-width: 800px) {
+    .contact-center {
+        display: grid;
+        grid-template-columns: 350px 1fr;    
+    }
+}
+

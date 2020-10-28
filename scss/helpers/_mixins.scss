@@ -1,0 +1,33 @@
+@mixin main {
+	* {
+		margin: 0;
+		padding: 0;
+		box-sizing: border-box;
+		font-family: $main_font;
+	}
+}
+
+@mixin clearfix {
+	&:before, &:after {
+	    content: "";
+	    display: table;
+	}
+	&:after {
+	    clear: both;
+	}
+}
+
+@mixin bkg_clr_1 {
+	background-color: $white_clr;
+    color: $main_background;
+}
+
+@mixin bkg_clr_2 {
+	background-color: $main_background;
+    color: $white_clr;
+}
+
+@mixin img_properties {
+	object-fit: cover;
+    border-radius: 0.5rem;
+}

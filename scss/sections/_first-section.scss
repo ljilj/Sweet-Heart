@@ -1,0 +1,28 @@
+.about-section {
+    padding: 5rem 0;
+}
+.section-center {
+    width: 90vw;
+    margin: 0 auto;
+    max-width: 1170px;
+    .about-img {
+        margin-bottom: 2rem;
+        img {
+            @include img_properties;
+            height: 20rem;
+        }
+    }
+}
+
+
+/* Responsive */
+@media screen and (min-width: 800px) {
+    .about-center {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        column-gap: 2rem;
+        .about-img {
+            margin-bottom: 0;
+        }
+    }
+}

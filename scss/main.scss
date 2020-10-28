@@ -1,0 +1,14 @@
+@import 'helpers/variables';
+@import 'helpers/mixins';
+@import 'helpers/functions';
+
+@import 'global/global';
+
+@import 'layout/header';
+@import 'layout/footer';
+
+@import 'sections/first-section';
+@import 'sections/second-section';
+@import 'sections/third-section';
+
+@include main;

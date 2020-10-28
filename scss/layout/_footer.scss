@@ -1,0 +1,17 @@
+footer {
+    background-color: rgb(34, 33, 33);
+    height: 90px;
+}
+.footer-content {
+    width: 90vw;
+    margin: 0 auto;
+    max-width: 1170px;
+    p {
+        text-align: center;
+        color: $white_clr;
+        padding-top: 2rem;
+        span {
+            color: $main_background;
+        }
+    }
+}
